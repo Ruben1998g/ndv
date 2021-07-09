@@ -1,0 +1,251 @@
+.location{
+    display:flex;
+}
+
+.location__wrapper{
+    margin:0 auto;
+    width:$mobile-width;
+    padding-left:37px;
+    padding-right:37px;
+    box-sizing:border-box;
+}
+
+.location__info{
+    font-family: 'CeraProBold', 'sans-serif';
+    font-size: 14px;
+    line-height: 18px;
+    color: #9E7B56;
+    position:relative;
+    text-align: center;
+}
+
+.location__info br{
+    display:none;
+}
+
+.location__info::before{
+    content:"";
+    display:block;
+    position:absolute;
+    width:20px;
+    height:20px;
+    background-image: url('/src/img/icon-map.png');
+    background-repeat: no-repeat;
+    top:50%;
+    left:0;
+    transform:translateY(-50%) translateX(-15px);
+}
+
+.location__list{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+.location__item{
+    display:flex;
+    margin-top:25px;
+}
+
+
+
+.location__link{
+    font-family: 'CeraProBold', 'sans-serif';
+    font-size: 14px;
+    line-height: 24px;
+    color: #9E7B56;
+    color:#2D2D2D;
+    text-decoration:none;
+    display:inline-block;
+    width:150px;
+    margin:auto;
+    position:relative;
+    transform: translateX(31px) translateY(-3px);
+}
+
+.location__link-light{
+    color: #9E7B56;
+    position:relative;
+}
+
+.location__link-light::after{
+    content:"";
+    display:block;
+    width:16px;
+    height:16px;
+    background-image:url('/src/img/icon-location-car.png');
+    background-repeat:no-repeat;
+    position:absolute;
+    top:0px;
+    right:-7px-16;
+}
+
+
+
+.location__item:nth-child(1) .location__link::before{
+    content:"";
+    display:block;
+    width:30px;
+    height:30px;
+    background-image:url('/src/img/icon-location-1.png');
+    background-repeat:no-repeat;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    left:-30-18px;
+}
+
+.location__item:nth-child(2) .location__link::before{
+    content:"";
+    display:block;
+    width:30px;
+    height:30px;
+    background-image:url('/src/img/icon-location-2.png');
+    background-repeat:no-repeat;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    left:-30-18px;
+}
+
+.location__item:nth-child(3) .location__link::before{
+    content:"";
+    display:block;
+    width:30px;
+    height:30px;
+    background-image:url('/src/img/icon-location-3.png');
+    background-repeat:no-repeat;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    left:-30-18px;
+}
+
+@media(min-width:$tablet-width){
+    .location__wrapper{
+        width:$tablet-width;
+        padding-left:52px;
+        padding-right:52px;
+        box-sizing: border-box;
+    }
+
+    .location__info{
+        display:none;
+    }
+
+    .location__list{
+        display:flex;
+        justify-content: space-between;
+        padding-left:20px;
+        padding-right:36px;
+    }
+
+    .location__item{
+        margin-top:0;
+    }
+
+    .location__link{
+        font-size:16px;
+    }
+}
+
+@media(min-width:$macbook-width){
+    .location__wrapper{
+        width:$macbook-width;
+        display:flex;
+        justify-content:space-between;
+        padding: 0;
+        padding-left:72px;
+        padding-right:72px;
+    }
+
+    .location__info{
+        display:block;
+        font-size:18px;
+        text-align: left;
+        line-height:130%;
+        padding-left:52px;
+
+    }
+
+    .location__info::before{
+        transform: translateY(-50%) translateX(0px);
+    }
+
+    .location__info br{
+        display: block;
+    }
+
+
+    .location__list{
+        padding:0;
+        transform:translateY(14px);
+    }
+
+    .location__link{
+        font-size:18px;
+        width:164px;
+        margin:0;
+    }
+
+    .location__link-light{
+        font-size:16px;
+    }
+
+    .location__item:not(:last-child){
+        margin-right:58px;
+    }
+
+   .location__list .location__item .location__link::before{
+        transform:translateY(-84%);
+    }
+
+    .location__info::before{
+        width:37px;
+        height:37px;
+        background-image: url('/src/img/icon-map-green.png');
+    }
+
+
+    .location__item:nth-child(1) .location__link::before{
+        content:"";
+        display:block;
+        width:37px;
+        height:37px;
+        background-image:url('/src/img/icon-location-big-1.png');
+    }
+
+    .location__item:nth-child(2) .location__link::before{
+        content:"";
+        display:block;
+        width:37px;
+        height:37px;
+        background-image:url('/src/img/icon-location-big-2.png');
+    }
+
+    .location__item:nth-child(3) .location__link::before{
+        content:"";
+        display:block;
+        width:37px;
+        height:37px;
+        background-image:url('/src/img/icon-location-big-3.png');
+    }
+}
+
+@media(min-width:$desktop-width){
+    .location__wrapper{
+        width:$desktop-width;
+        padding-left:156px;
+        padding-right:156px;
+    }
+}
+
+
+
+@media(min-width:$sldesktop-width){
+    .location__wrapper{
+        width:$sldesktop-width;
+        padding-left:350px;
+        padding-right:350px;
+    }
+}

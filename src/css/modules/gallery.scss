@@ -1,0 +1,295 @@
+.gallery{
+    display:flex;
+}
+
+.gallery__wrapper{
+    width:100%;
+}
+
+.gallery__list{
+    padding:0;
+    list-style:none;
+    width:100%;
+}
+
+.gallery__item{
+    width:100%;
+    position:relative;
+}
+
+.gallery__link{
+    text-decoration: none;
+    margin:0;
+    position:absolute;
+    bottom:17px;
+    left:93px;
+
+}
+
+.gallery__header{
+    font-family: 'CeraProBold', 'sans-serif';
+    font-size: 22px;
+    line-height: 30px;
+    color: #FFFFFF;
+    display: inline-block;
+    width:250px;
+    top:188px;
+    left:20px;
+}
+
+
+.gallery__item:nth-child(1){
+
+    background-image:url('/src/img/photo-1-mobile.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height:210px;
+
+}
+
+.gallery__item:nth-child(2){
+
+    background-image:url('/src/img/photo-2-mobile.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height:210px;
+}
+
+.gallery__item:nth-child(3){
+ 
+    background-image:url('/src/img/photo-3-mobile.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height:210px;
+}
+
+.gallery__item:nth-child(4){
+  
+    background-image:url('/src/img/photo-4-mobile.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height:210px;
+}
+
+.gallery__item:nth-child(5){
+  
+    background-image:url('/src/img/photo-5-mobile.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height:210px;
+}
+
+
+
+@media(min-width:$tablet-width){
+    .gallery__wrapper{
+        width:$tablet-width;
+        padding-left:52px;
+        padding-right:52px;
+        margin-left:auto;
+        margin-right:auto;
+        box-sizing: border-box;
+    }
+
+    .gallery__item{
+        width:unset;
+        width:100%;
+        height:100%;
+    }
+
+    .gallery__list{
+        padding:0;
+        list-style:none;
+        display:grid;
+
+        grid-template-columns:repeat(2, 328px);
+        grid-template-rows:repeat(4,310px);
+        
+    }
+
+   
+    
+    .gallery__item:nth-child(1){
+        grid-column:span 2;
+        grid-row:span 1;
+        background-image:url('/src/img/photo-1-tablet.jpg');
+        width:100%;
+        height:100%;
+        order:1;
+    }
+    
+    .gallery__item:nth-child(2){
+        grid-column:span 2;
+        grid-row:span 1;
+        background-image:url('/src/img/photo-2-tablet.jpg');
+        width:100%;
+        height:100%;
+        order:2;
+    }
+    
+    .gallery__item:nth-child(3){
+        grid-column:span 1;
+        grid-row:span 1;
+        background-image:url('/src/img/photo-3-tablet.jpg');
+        width:100%;
+        height:100%;
+        order:3;
+    }
+    
+    .gallery__item:nth-child(4){
+        grid-column:span 1;
+        grid-row:span 1;
+        background-image:url('/src/img/photo-4-tablet.jpg');
+        width:100%;
+        height:100%;
+        order:5;
+    }
+    
+    .gallery__item:nth-child(5){
+        grid-column:span 1;
+        grid-row:span 2;
+        background-image:url('/src/img/photo-5-tablet.jpg');
+        width:100%;
+        height:100%; 
+        order:4;
+    }
+
+    .gallery__link{
+        bottom: 40px;
+        left: 35px;
+    }
+}
+
+
+@media(min-width:$macbook-width){
+    .gallery__wrapper{
+        width:$macbook-width;
+        padding-left:72px;
+        padding-right:72px;
+    }
+
+    .gallery__list{
+        padding:0;
+        list-style:none;
+        display:grid;
+
+        grid-template-columns:repeat(4, 253px);
+        grid-template-rows:repeat(2,253px);
+        
+    }
+
+    .gallery__link{
+        bottom: 11px;
+        left: 18px;
+    }
+
+   
+    
+    .gallery__item:nth-child(1){
+        grid-column:span 2;
+        grid-row:span 1;
+        order:1;
+        background-image:url('/src/img/photo-1-macbook.jpg');
+    }
+    
+    .gallery__item:nth-child(2){
+        grid-column:span 2;
+        grid-row:span 1;
+        order:4;
+        background-image:url('/src/img/photo-2-macbook.jpg');
+        
+    }
+    
+    .gallery__item:nth-child(3){
+        grid-column:span 1;
+        grid-row:span 1;
+        order:2;
+        background-image:url('/src/img/photo-3-macbook.jpg');
+        
+    }
+    
+    .gallery__item:nth-child(4){
+        grid-column:span 1;
+        grid-row:span 1;
+        order:3;
+        background-image:url('/src/img/photo-4-macbook.jpg');
+    }
+    
+    .gallery__item:nth-child(5){
+        grid-column:span 1;
+        grid-row:span 2;
+        order:2;
+        background-image:url('/src/img/photo-5-macbook.jpg');
+    }
+   
+}
+
+@media(min-width:$desktop-width){
+    .gallery__wrapper{
+       width:$desktop-width;
+       padding-left:156px;
+        padding-right:156px;
+        
+    }
+
+    .gallery__list{
+        transform: translateX(59px);
+    }
+
+    .gallery__item:nth-child(1){
+        background-image:url('/src/img/photo-1-desktop.jpg');
+    }
+    
+    .gallery__item:nth-child(2){
+        background-image:url('/src/img/photo-2-desktop.jpg');
+        
+    }
+    
+    .gallery__item:nth-child(3){
+        background-image:url('/src/img/photo-3-desktop.jpg');
+        
+    }
+    
+    .gallery__item:nth-child(4){
+        background-image:url('/src/img/photo-4-desktop.jpg');
+    }
+    
+    .gallery__item:nth-child(5){
+        background-image:url('/src/img/photo-5-desktop.jpg');
+    }
+}
+
+
+@media(min-width:$sldesktop-width){
+    .gallery__wrapper{
+      
+        
+    }
+
+    .gallery__item:nth-child(1){
+        background-image:url('/src/img/photo-1-big-desktop.jpg');
+    }
+    
+    .gallery__item:nth-child(2){
+        background-image:url('/src/img/photo-2-big-desktop.jpg');
+        
+    }
+    
+    .gallery__item:nth-child(3){
+        background-image:url('/src/img/photo-3-big-desktop.jpg');
+        
+    }
+    
+    .gallery__item:nth-child(4){
+        background-image:url('/src/img/photo-4-big-desktop.jpg');
+    }
+    
+    .gallery__item:nth-child(5){
+        background-image:url('/src/img/photo-5-big-desktop.jpg');
+    }
+}

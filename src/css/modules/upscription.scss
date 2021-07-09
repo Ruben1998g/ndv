@@ -1,0 +1,70 @@
+.upscription{
+    display:flex;
+}
+
+.upscription__wrapper{
+    margin:0 auto;
+    width:$mobile-width;
+    padding-left:37px;
+    padding-right:37px;
+    box-sizing:border-box;
+}
+
+.upscription__description-header{
+    font-family: 'CeraProBold', 'sans-serif';
+    font-size: 18px;
+    line-height: 27px;
+    color: #2D2D2D;
+    margin-top:42px;
+    margin-bottom:0;
+}
+
+.upscription__description{
+    font-family: 'CeraProRegular', 'sans-serif';
+    font-size: 18px;
+    line-height: 27px;
+    color: #2D2D2D;
+    margin-top:28px;
+    margin-bottom:38px;
+}
+
+
+@media(min-width:$tablet-width){
+    .upscription__wrapper{
+        width:$tablet-width;
+        padding-left:52px;
+        padding-right:52px;
+    }
+}
+
+@media(min-width:$macbook-width){
+    .upscription__wrapper{
+        width:$macbook-width;
+        padding-left:72px;
+        padding-right:72px;
+    }
+
+    .upscription__description-header{
+        margin-top:57px;
+    }
+}
+
+@media(min-width:$desktop-width){
+    .upscription__wrapper{
+        width:$desktop-width;
+        padding-left:180px;
+        padding-right:180px;
+    }
+
+    .upscription__description{
+        margin-bottom:71px;
+    }
+}
+
+@media(min-width:$sldesktop-width){
+    .upscription__wrapper{
+        width:$sldesktop-width;
+        padding-left:350px;
+        padding-right:350px;
+    }
+}

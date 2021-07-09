@@ -1,0 +1,39 @@
+.visually-hidden{
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+$mobile-width:375px;
+$tablet-width:768px;
+$macbook-width:1152px;
+$desktop-width:1440px;
+$sldesktop-width:1920px;
+
+body{
+    position:relative;
+}
+
+.show{
+    display:block !important;
+}
+
+@font-face{
+	font-weight:normal;
+	font-family:"CeraProRegular";
+	font-style:normal;
+    src:url('/src/fonts/CeraPro-Regular.woff2') format('woff2');
+}
+
+@font-face{
+	font-weight:normal;
+	font-family:"CeraProBold";
+	font-style:normal;
+    src:url('/src/fonts/CeraPro-Bold.woff2') format('woff2');
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');

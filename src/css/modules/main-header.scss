@@ -1,0 +1,180 @@
+.main-header{
+    position: relative;
+}
+
+.main-header__container{
+    display:flex;
+    background-image: url('/src/img/mobile-header-thone.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    flex-direction:column;
+}
+
+.main-header__main-container{
+    background: #0B351D;
+}
+
+.main-header__main-wrapper{
+    margin:0 auto;
+    width:$mobile-width;
+    padding:10px 37px 14px;
+    box-sizing:border-box;
+}
+
+.main-header__wrapper{
+    margin:0 auto;
+    width:$mobile-width;
+    padding:0 37px;
+    box-sizing:border-box;
+}
+
+.header-block__tel{
+    font-family: 'CeraProBold', 'sans-serif';
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    color: #E3CEA3;
+    text-decoration: none;
+}
+
+.header-block__call{
+    font-family: 'CeraProBold', 'sans-serif';
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    color: #9FC460;
+    text-decoration:none;
+}
+
+.main-header__callback-list{
+    list-style:none;
+    padding:0;
+    display:flex;
+    justify-content:space-between;
+    margin-top:36px;
+    margin-bottom:14px;
+    margin-left:35px;
+    margin-right:35px;
+}
+
+.main-header__callback-item{
+    position:relative;
+}
+
+.main-header__callback-link{
+    font-family: 'CeraProRegular', 'sans-serif';
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #E3CEA3;
+    text-decoration: none;
+    
+}
+
+.main-header__callback-call::before{
+    content:"";
+    position:absolute;
+    display:block;
+    width:17px;
+    height:17px;
+    top:0;
+    left:50%;
+    transform:translateX(-50%) translateY(-25px);
+    background-image:url('/src/img/phone-call.png');
+    background-repeat:no-repeat;
+}
+
+.main-header__callback-send::before{
+    content:"";
+    position:absolute;
+    display:block;
+    width:14px;
+    height:15px;
+    top:0;
+    left:50%;
+    transform:translateX(-50%) translateY(-25px);
+    background-image:url('/src/img/icon-send.png');
+    background-repeat:no-repeat;
+}
+
+
+@media(min-width:$tablet-width){
+    .main-header__main-wrapper{
+        width:$tablet-width;
+        padding-left:52px;
+        padding-right:52px;
+    }
+
+    .main-header__wrapper{
+        width:$tablet-width;
+        padding-left:52px;
+        padding-right:52px;
+    }
+
+    .main-header__container{
+        background-image: url('/src/img/tablet-header-thone.jpg');
+    }
+
+    .main-header__main-container-under{
+        display:none;
+    }
+}
+
+@media(min-width:$macbook-width){
+    .main-header__main-wrapper{
+        width:$macbook-width;
+        padding:0;
+        width:332px;
+        height:100%;
+        padding: 39px 10px 49px 84px;
+    }
+
+    .main-header__wrapper{
+        width:$macbook-width;
+        padding-left:357px;
+        padding-right:72px;
+    }
+
+    .main-header__main-container{
+        position:absolute;
+        top:0;
+        left:0;
+        height:100%;
+        background: linear-gradient(360deg, rgba(227, 206, 163, 0.448) 0%, rgba(11, 53, 29, 0) 99.03%), rgba(11,53,29,0.9);
+    }
+
+    .main-header__container{
+        background-image: url('/src/img/macbook-header-thone.jpg');
+    }
+
+
+
+
+
+}
+
+@media(min-width:$desktop-width){
+    .main-header__main-wrapper{
+        width:350px;
+    }
+
+    .main-header__wrapper{
+        width:$desktop-width;
+        padding-left:429px;
+        padding-right:156px;
+    }
+
+    .main-header__container{
+        background-image: url('/src/img/desktop-header-thone.jpg');
+    }
+}
+
+@media(min-width:$sldesktop-width){
+    .main-header__main-wrapper{
+        width:350px;
+    }
+
+    .main-header__wrapper{
+        width:$sldesktop-width;
+    }
+}
